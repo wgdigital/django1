@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Agragar Autor</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Agregar Autor</h1>
+	<form method="post">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit" name="Guardar">Guardar</button>
+	</form>
+</body>
+</html>
